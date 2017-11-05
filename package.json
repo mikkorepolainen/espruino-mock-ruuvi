@@ -1,0 +1,21 @@
+{
+  "name": "espruino-mock-ruuvi",
+  "version": "0.0.1",
+  "description": "Mock workbench for dev-testing code running on the espruino-ruuvitag firmware",
+  "main": "espruino-mock-ruuvi.js",
+  "bin": {
+    "espruino-mock-ruuvi": "./espruino-mock-ruuvi.js"
+  },
+  "dependencies": {
+    "Ruuvitag": "file:local_modules/Ruuvitag",
+    "ble_eddystone": "file:local_modules/ble_eddystone",
+    "ble_ibeacon": "file:local_modules/ble_ibeacon"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node espruino-mock-ruuvi.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikko Repolainen (mikko@repolainen.fi)",
+  "license": "MIT"
+}

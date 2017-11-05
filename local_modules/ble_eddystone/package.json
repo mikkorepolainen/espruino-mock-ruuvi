@@ -1,0 +1,5 @@
+{
+  "name": "ble_eddystone",
+  "version": "1.0.0",
+  "main": "ble_eddystone.js"
+}
