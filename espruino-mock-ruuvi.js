@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var file = process.argv[2];
 if (!file) {
-  console.log("Usage: node test.js FILE");
+  console.log("Usage: node test FILE");
   process.exit(0);
 }
 

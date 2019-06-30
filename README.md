@@ -1,10 +1,10 @@
 # Espruino Mock Ruuvi
 
-Node.js command line mock workbench for dev-testing code running on the espruino-ruuvitag firmware.
+Node.js command line mock workbench to aid in developing code for the espruino-ruuvitag firmware.
 
 ## Description
 
-A mock workbench for testing espruino-js code written for the ruuvitag sensor.
+A mock workbench for running espruino-js code written for the ruuvitag sensor.
 
 The purpose of the tool is to be able to quickly validate and sanity-check the espruino javascript code as it is,
 receive console notifications about what the platform would be doing
@@ -12,21 +12,23 @@ and to monitor the memory behaviour of the application.
 
 At the moment, only a handful of basic features are available. Feel free to add and submit changes or additional features.
 
-The tool is not suitable for production testing because the actual espruino-ruuvitag firmware is different from the node.js platform.
-
 ## Usage
 
 Install node if not already installed.
 
-Clone this repo, then run `npm install -g` within it.
+Clone this repo, then run `npm install`
 
-Run `espruino-mock-ruuvi <relative-path-to-espruino-js-file>` 
+Run `npm start <relative-path-to-espruino-js-file>` 
+
+To install globally, run `npm install -g`.
+After that, usage is: `espruino-mock-ruuvi <relative-path-to-espruino-js-file>` 
 
 ## Notes
 
-- The firmware version used during development was [1v94](https://www.espruino.com/files/espruino_1v94.zip) of the Espruino Ruuvitag-specific firmware.
-- Some of the modules used are included in the repo as local modules, downloaded directly from http://www.espruino.com/modules/ at the time of writing.
-  The licenses for these modules are unclear and the implementation may be different on other firmware versions.
+- The firmware version used during development was [2v03](https://www.espruino.com/Download#ruuvitag) of the Espruino Ruuvitag-specific firmware.
+- The ble_eddystone and ble_ibeacon modules are included in the repo as local modules, downloaded directly from http://www.espruino.com/modules/ (updated on 2019-06-30).
+- Ruuvitag module is also included as a local module but it is not the actual module from espruino but rather a mock implementation.
+- The implementation may be different on other firmware versions.
 
 ## More
 
